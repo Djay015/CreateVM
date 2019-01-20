@@ -1,0 +1,3 @@
+﻿Name,Memory,Switch,Path,Generation,DiskSize,ProcessorCount,MemoryMinimumBytes,MemoryStartupBytes,MemoryMaximumBytes,NetworkVlan,GoldImage
+DOHVS2B20AIWS01,12288MB,SETSwitch,C:\ClusterStorage\Volume2,2,127GB,8,4096MB,4096MB,12288MB,70,WinServer2016StdGui.vhdx
+DOHVS2B20AITR01,32768MB,SETSwitch,C:\ClusterStorage\Volume2,2,127GB,8,8192MB,8192MB,32768MB,70,WinServer2016StdGui.vhdx

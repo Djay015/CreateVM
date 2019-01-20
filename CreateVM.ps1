@@ -44,6 +44,7 @@ Foreach ($CsvImport in $CsvImports){
 	$VMName = $CsvImport.Name
     $VMVlanId = $CsvImport.NetworkVlan
 
+    #Assign VLAN id
     Set-VMNetworkAdapterVlan -VMName $VMName -Access -VlanId $VMVlanId 
 
     #Start and stop VM to get mac address, then arm the new MAC address on the NIC itself
@@ -84,9 +85,10 @@ Foreach ($CsvImport in $CsvImports){
 }
 
 # Configure VM
-$IPDomain="10.200.70.99"
+#$IPDomain="10.200.70.99"
 $DefaultGW="10.200.70.1"
 $DNSServer="10.200.69.51"
+$DNSServer2="10.200.69.52"
 $DNSDomain="Staging.Local"
 $AdminAccount="Administrator"
 $AdminPassword="72Isthe#now"
@@ -99,6 +101,7 @@ $TemplateLocation="M:\Scripts\CreateVM\GoldImage\WinServer2016StdGui.vhdx"
 Foreach ($CsvImport in $CsvImports){
 	$VMName = $CsvImport.Name
     $VMPath = $CsvImport.Path
+    $IPAddress = $CsvImport.IPAddress
 
     Copy-Item $UnattendLocation $VMPath\$VMName\unattend$VMName.xml
     $DefaultXML = "$VMPath\$VMName\" + "unattend"+"$VMName.xml"
@@ -113,9 +116,10 @@ Foreach ($CsvImport in $CsvImports){
     -replace '1MacAddressDomain', $MACAddress `
     -replace '1DefaultGW', $DefaultGW `
     -replace '1DNSServer', $DNSServer `
+    -replace '2DNSServer', $DNSServer2 `
     -replace '1DNSDomain', $DNSDomain `
     -replace '1AdminPassword', $AdminPassword `
-    -replace '1IPDomain', $IPDomain 
+    -replace '1IPDomain', $IPAddress 
     } | Set-Content $NewXML
 
     Mount-vhd -Path "$VMPath\$VMName\$VMName.vhdx"

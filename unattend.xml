@@ -114,7 +114,7 @@
       <Identification>
         <Credentials>
           <Domain>Staging.local</Domain>
-          <Password>72Isthe#now</Password>
+          <Password>##PASSWORD##</Password>
           <Username>Administrator</Username>
         </Credentials>
         <JoinDomain>Staging.local</JoinDomain>

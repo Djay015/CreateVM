@@ -150,14 +150,12 @@ $DNSServer2 = "10.200.69.52"
 $DNSDomain = "Staging.Local"
 $AddDnsDomain = "Staging.Local"
 $LocalAdminAccount = "Administrator"
-$LocalAdminPassword = "72Isthe#now"
+$LocalAdminPassword = "password123"
 $DomainAdminAccount = "Administrator"
-$DomainAdminPassword = "72Isthe#now"
+$DomainAdminPassword = "password123"
 $StandardTime = "Arab Standard Time"
 $Organization = "Aljazera Staging System"
 $ProductID = "C3RCX-M6NRP-6CXC9-TW2F2-4RHYD"
-#$UnattendLocation = "X:\Scripts\CreateVM\unattend2016.xml"
-#$TemplateLocation = "X:\Scripts\CreateVM\GoldImage\WinServer2016StdGui.vhdx"
 
 Foreach ($CsvImport in $CsvImports){
 	$VMName = $CsvImport.Name

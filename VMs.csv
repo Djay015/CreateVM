@@ -1,2 +1,2 @@
 ﻿Name,Memory,Switch,Path,Generation,DiskSize,ProcessorCount,MemoryMinimumBytes,MemoryStartupBytes,MemoryMaximumBytes,NetworkVlan,IPAddress,GoldImage
-TEST0005,4096MB,SETSwitch,C:\ClusterStorage\Volume2,2,127GB,8,4096MB,4096MB,8192MB,70,10.200.70.90,WinServer2016StdGui.vhdx
+TEST0100,4096MB,SETSwitch,C:\ClusterStorage\Volume2,2,127GB,8,4096MB,4096MB,8192MB,70,10.200.70.90,WinServer2016StdGui.vhdx

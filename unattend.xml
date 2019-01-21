@@ -97,7 +97,7 @@
         <Interface wcm:action="add">
           <DNSServerSearchOrder>
             <IpAddress wcm:action="add" wcm:keyValue="1">1DNSServer</IpAddress>
-            <IpAddress wcm:action="add" wcm:keyValue="1">2DNSServer</IpAddress>
+            <IpAddress wcm:action="add" wcm:keyValue="2">2DNSServer</IpAddress>
           </DNSServerSearchOrder>
           <Identifier>1MacAddressDomain</Identifier>
           <EnableAdapterDomainNameRegistration>true</EnableAdapterDomainNameRegistration>
@@ -113,11 +113,11 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
       <Identification>
         <Credentials>
-          <Domain>Staging.local</Domain>
-          <Password>##PASSWORD##</Password>
-          <Username>Administrator</Username>
+          <Domain>1AddDNSDomain</Domain>
+          <Password>1DomainAdminPassword</Password>
+          <Username>1DomainAdminAccount</Username>
         </Credentials>
-        <JoinDomain>Staging.local</JoinDomain>
+        <JoinDomain>1AddDNSDomain</JoinDomain>
         <MachineObjectOU>ou=Servers,ou=Doha,ou=Staging Servers,dc=Staging,dc=local</MachineObjectOU>
       </Identification>
     </component>

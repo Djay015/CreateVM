@@ -1,0 +1,3 @@
+﻿Name,Memory,Switch,Path,Generation,DiskSize,ProcessorCount,MemoryMinimumBytes,MemoryStartupBytes,MemoryMaximumBytes,NetworkVlan,IPAddress,GoldImage,UnattendLocation
+TEST2016,4096MB,SETSwitch,C:\ClusterStorage\Volume2,2,127GB,8,4096MB,4096MB,8192MB,70,10.200.70.90,WinServer2016StdGui.vhdx,X:\Scripts\CreateVM\unattend2016.xml
+TEST2012,4096MB,SETSwitch,C:\ClusterStorage\Volume2,2,127GB,8,4096MB,4096MB,8192MB,70,10.200.70.90,WinServer2012r2StdGui.vhdx,X:\Scripts\CreateVM\unattend2012r2.xml
